@@ -1,107 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment form</title>
+  <link href="app.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="nav-bar">
-        <div class="logo">Snapshot</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+  <div class="wrapper">
+    <h2>ZuriTraining Payment Form</h2>
+    <form>
+      <h4>Account</h4>
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required class="name">
+          <i class="fa fa-user icon"></i>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="username" required class="name">
+          <i class="fa fa-user icon"></i>
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="input-box">
+          <input type="email" placeholder="email" required class="name">
+          <i class="fa fa-envelope"></i>
+        </div>
+      </div>
 
-    <!-- Hero section -->
+      <div class="input-group">
+        <div class="input-box">
+          <h4>Date of birth</h4>
+          <input type="text" placeholder="DD" class="dob">
+          <input type="text" placeholder="MM" class="dob">
+          <input type="text" placeholder="YYY" class="dob">
+        </div>
+        <div class="input-box">
+          <h4>Gender</h4>
+          <input type="radio" name="gender" checked id="b1" class="radio">
+          <label for="b1">Male</label>
+          <input type="radio" name="gender" class="radio" id="b2">
+          <label for="b2">Female</label>
+        </div>
+      </div>
 
-    <div class="hero-section">
-        <div class="hero-content-heading">
-            <h3>Let's take a snapshot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae quod molestias voluptas nam <br> facere numquam quos pariatur repellendus excepturi!</p>
+      <div class="input-group">
+        <div class="input-box">
+          <h4>Payment Details</h4>
+          <input type="radio" name="pay" id="bc1" checked class="radio">
+          <label for="bc1">
+            <span>
+              <i class="fa fa-cc-visa">Credit card</i>
+            </span>
+          </label>
+          <input type="radio" name="pay" id="bc2" class="radio">
+          <label for="bc2">
+            <span>
+              <i class="fa fa-cc-paypal">paypal </i>
+            </span>
+          </label>
         </div>
-        <div class="hero-content-btn">
-            <a href="#">Learn More</a>
-        </div>
-    </div>
+      </div>
 
-    <!-- sub-hero section -->
-    <div class="hero-background">
-        <div class="background">
-            <h4>Background</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
+      <div class="input-group">
+        <div class="input-box">
+          <input type="tel" class="name" placeholder="card number" required>
+          <i class="fa fa-credit-card icon"></i>
         </div>
-        <div class="hero-background-pos"></div>
-    </div>
-    <div class="snapshot-team">
-        <h2>Snapshot Team</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, nesciunt!</p>
-    </div>
-    <div class="snapshot-box">
-        <div class="snapshot-box-content">
-            <div class="box1">
-                    <div class="circle"></div>
-                    <h5>Linda, Manager</h5>
-            </div>
-            <div class="box1">
-                <div class="circle"></div>
-                <h5>Linda, Manager</h5>
-            </div>
-            <div class="box3">
-                <div class="circle"></div>
-                <h5>Linda, Manager</h5>
-            </div>
-        </div>
-    </div>
+      </div>
 
-    <!-- Gallery section -->
-    <div class="gallery-section">
-        <div class="gallery-content">
-            <h4>Gallery</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nullae rem!</p>
+      <div class="input-group">
+        <div class="input-box">
+          <input type="tel" required placeholder="Card CVC">
+          <i class="fa fa-user icon"></i>
         </div>
-        <div class="gallery-img">
-            <div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
-            </div>
-            <div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
-                </div>
-            </div>
+        <div class="input-box">
+          <select>
+            <option>01 Dec</option>
+            <option>02 Dec</option>
+            <option>03 Dec</option>
+          </select>
+          <select>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+          </select>
         </div>
-    </div>
+      </div>
 
-    <!-- Footer section -->
-    <div class="footer">
-        <div class="footer-content">
-            <h4>Send a message</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nuleos rem!</p>
+      <div class="input-group">
+        <div class="input-box">
+          <button type="submit">Pay Now</button>
         </div>
-        <div class="footer-input">
-            <input type="text" placeholder="Name"> 
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="footer-textarea">
-            <textarea placeholder="Message"></textarea>
-        </div>
-        <div class="footer-btn">
-            <a href="#">Send Message</a>
-        </div>
-        <h6>Copyright &copy; 2021 Zuri Training.</h6>
-    </div>
+      </div>
+
+    </form>
+
+
+  </div>
+
 </body>
+
 </html>
