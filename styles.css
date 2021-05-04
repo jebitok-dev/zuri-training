@@ -6,3 +6,47 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
+.wrapper {
+    margin: 50px;
+}
+
+input[type=text] {
+    border: 2px solid grey;
+    border-radius: 2px;
+    color: #fff;
+    width: 70%;
+}
+
+input[type=email] {
+    border: 2px solid grey;
+    border-radius: 2px;
+    color: #fff;
+    width: 70%;
+}
+
+input[type=tel] {
+    border: 2px solid grey;
+    border-radius: 2px;
+    color: #fff;
+    width: 70%;
+}
+
+
+
+.input-box button {
+    background-color: red;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 6px 3px;
+    display: inline-block;
+}
+
+/* input {
+    width: 50%;
+} */
+
+wrapper {
+    display: flex;
+}
