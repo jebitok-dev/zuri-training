@@ -15,19 +15,25 @@ console.log(convertFahrToCelsius({ temp: 0 })); //NaN
 // - for numbers that have multiple factors, use hyphens as separators
 // e.g 10 === "yu-oh", 30 === "yu-gi-oh"
 
-const checkYuGiOh = (n) => {
-    for (let i = 1; i <= n; i++) {
-        if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
-            console.log("yu-gi-oh");
-        } else if (i % 2 == 0) {
-            console.log("yu");
-        } else if (i % 3 == 0) {
-            console.log("gi");
-        } else if (i % 5 == 0) {
-            console.log("oh")
+const checkYuGiOh = (n, arr = []) => {
+    if (n === 1) {
+        arr.push('1');
+        return arr.reverse();
+    } else {
+        if (n % 2 == 0 && n % 3 == 0 && n % 5 == 0) {
+            arr.push("yu-gi-oh");
+        } else if (n % 2 == 0) {
+            arr.push("yu");
+        } else if (n % 3 == 0) {
+            arr.push("gi");
+        } else if (n % 5 == 0) {
+            arr.push("oh")
         } else {
-            console.log(i);
+            arr.push('' + n);
         }
+        return checkYuGiOh(n - 1, arr);
     }
 }
-console.log(checkYuGiOh(10));
+console.log(checkYuGiOh(10)); //['1',  'yu', 'gi','yu', 'oh', 'yu','7',  'yu', 'gi','yu']
+console.log(checkYuGiOh("5"));//[ '1', 'yu', 'gi', 'yu', 'oh' ]
+// console.log(checkYuGiOh("fizzbuzz is meh"));
