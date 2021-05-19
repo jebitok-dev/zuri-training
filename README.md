@@ -1,5 +1,5 @@
 # zuri-training
-Learning Front-end Development i.e HTML, CSS & JavaScript by implementing web pages through Zuri Training program.
+Learning Front-end Development i.e HTML, CSS & JavaScript by implementing web pages and solving coding challenges using JavaScript through Zuri Training program. 
 
 ## Built With
 
